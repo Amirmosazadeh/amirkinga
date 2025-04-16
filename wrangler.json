@@ -1,0 +1,30 @@
+{
+  "name": "amirkinga",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2025-04-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "saas-admin-template-d1",
+      "database_id": "e3928ef4-091b-4ef0-9117-55d868dfbf97"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "amirkinga-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
